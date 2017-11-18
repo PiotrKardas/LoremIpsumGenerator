@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lorem Ipsum Generator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link th:href="@{style.css}" href="../static/style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
+
+    <script type="text/javascript" language="javascript">
+
+ $("document").ready(function($) {
+               $("header").delay(100).show("fade",1000);
+			   $(".block").delay(300).show("fade",1000);                   
+ });
+    </script>
+</head>
+<body>
+<header>
+    <div class="title"><font color="#8253EB"><b>L</b></font>OREM <font color="#8253EB"><b>I</b></font>PSUM</div>
+    <div class="sub-title">Generator</div>
+</header>
+<div class="block">
+    <br><br>
+    <form action="#" th:action="@{/}" th:object="${lorem1}" method="post">
+        <p class="label">Paragraphs:
+            <input class="text-box" type="number" min="1" max=99 th:field="*{id}"/>
+        </p>
+			<textarea id="style-10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Fermentum et sollicitudin ac orci. Vitae auctor eu augue ut lectus arcu bibendum at varius. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Quam quisque id diam vel quam elementum. Libero enim sed faucibus turpis in. Et ligula ullamcorper malesuada proin libero nunc consequat interdum. Lectus vestibulum mattis ullamcorper velit sed. Consequat ac felis donec et odio pellentesque. Nullam eget felis eget nunc. Eu tincidunt tortor aliquam nulla facilisi cras fermentum. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada. In nibh mauris cursus mattis molestie a iaculis at. Nisl purus in mollis nunc sed. Ante metus dictum at tempor commodo ullamcorper. Gravida arcu ac tortor dignissim convallis. Et ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Sed viverra tellus in hac habitasse platea dictumst vestibulum. Mollis nunc sed id semper risus in. Sed libero enim sed faucibus turpis in eu mi. Gravida arcu ac tortor dignissim convallis. Et ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Sed viverra tellus in hac habitasse platea dictumst vestibulum. Mollis nunc sed id semper risus in. Sed libero enim sed faucibus turpis in eu mi.
+			</textarea>
+        <p>
+            <input class="button1" type="submit"/>
+        <p class="btn_text">GENERATE</p>
+        <div class="btn_img">
+            <div class="button_arrow_bg">
+                <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                     width="17" height="9" viewBox="0 0 17 9">
+                    <image id="arrow" data-name="arrow" width="17" height="9"
+                           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAQAAAB+4Q+HAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhAxkVCzJKs+mSAAAAWElEQVQY02P4z4AVsv3f/V8Bwmb4jwuG/r/zXw6/Eob/kf9v/pfBr4Thf9z/6/81Gf//Z8AP9uA3pfH/hf/C+BTU/7/0XxSfW6r+X/0vis9HAv8P/ZeAsAH9UJQoa3Fr1wAAAABJRU5ErkJggg=="/>
+                </svg>
+            </div>
+        </div>
+        </p>
+    </form>
+</div>
+</body>
+</html>
